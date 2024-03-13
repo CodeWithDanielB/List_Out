@@ -9,7 +9,7 @@ using ListOut.Data;
 using ListOut.Models;
 
 namespace ListOut.Controllers
-{
+{ 
     [Route("api/[controller]")]
     [ApiController]
     public class TodoItemsController : ControllerBase

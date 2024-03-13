@@ -9,9 +9,9 @@
 <body>
     <header>
         <h1>LIST OUT</h1>
-        <form id="new-task-form">
+        <form id="new-task-form" onsubmit="return false;">
             <input type="text" id="new-task-input" placeholder="Any plans for today?">
-            <input type="submit" id="new-task-submit" value="Add task">
+            <input type="submit" id="new-task-submit" value="Add task" onclick="addTask()">
         </form>
     </header>
 
@@ -19,13 +19,16 @@
         <section class="task-list">
             <h2>Tasks</h2>
             <div id="tasks">
-                <!--<div class="task">
+                <!--<div class="task" id="task_0">
+                    <div class="invisible">
+                        <input type="text" class="text" id="id_0" value="0" readonly>
+                    </div>
                     <div class="content">
-                        <input type="text" class="text" value="My shiny task" readonly>
+                        <input type="text" class="text" id="content_0" value="My shiny task" readonly>
                     </div>
                     <div class="actions">
-                        <button class="edit">Edit</button>
-                        <button class="delete">Delete</button>
+                        <button class="edit" id="editTask_0" onclick="editTask(0)">EDIT</button>
+                        <button class="delete" id="deleteTask_0" onclick="deleteTask(0)">DELETE</button>
                     </div>
                 </div>-->
             </div>

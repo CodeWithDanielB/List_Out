@@ -205,9 +205,9 @@ function deleteTask(id) {
 
 
 // // Debugs
-// // addTask_action(0, "First task");
-// // addTask_action(1, "Second task");
-// // addTask_action(2, "Third task");
+// addTask_action(0, "First task");
+// addTask_action(1, "Second task");
+// addTask_action(2, "Third task");
 
 
 // // function deleteTask(id) { deleteTask_action(id) }

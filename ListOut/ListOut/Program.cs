@@ -1,4 +1,5 @@
 using ListOut.Data;
+using ListOut.ListDataDal;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -11,6 +12,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddTransient<DapperContext>();
+builder.Services.AddTransient<DataListDal, DataListDal>();
 
 builder.Services.AddCors(options =>
 {
@@ -30,7 +32,12 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    app.UseDeveloperExceptionPage();
 }
+
+app.UseCors("AllowSpecificOrigin");
+
+app.UseRouting();
 
 app.UseHttpsRedirection();
 

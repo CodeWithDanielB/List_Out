@@ -67,8 +67,8 @@
 // })
 
 
-const SERVER_ROOT = 'http://127.0.0.1:5001';
-const API_ADD = SERVER_ROOT + '/api/add';
+const SERVER_ROOT = 'http://127.0.0.1:5091';
+const API_ADD = SERVER_ROOT + '/api/List/add';
 const API_EDIT = SERVER_ROOT + '/api/edit';
 const API_DELETE = SERVER_ROOT + '/api/delete';
 

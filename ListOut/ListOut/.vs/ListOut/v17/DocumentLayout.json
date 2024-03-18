@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\IMS-QA\\Desktop\\F-B TODO\\ListOut\\ListOut\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2DDE0EF9-EF3E-406B-98A0-35160395E914}|ListOut.csproj|c:\\users\\ims-qa\\desktop\\f-b todo\\listout\\listout\\controllers\\todoitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2DDE0EF9-EF3E-406B-98A0-35160395E914}|ListOut.csproj|solutionrelative:controllers\\todoitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2DDE0EF9-EF3E-406B-98A0-35160395E914}|ListOut.csproj|c:\\users\\ims-qa\\desktop\\f-b todo\\listout\\listout\\controllers\\listcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DDE0EF9-EF3E-406B-98A0-35160395E914}|ListOut.csproj|solutionrelative:controllers\\listcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DDE0EF9-EF3E-406B-98A0-35160395E914}|ListOut.csproj|c:\\users\\ims-qa\\desktop\\f-b todo\\listout\\listout\\listdatadal\\myconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2DDE0EF9-EF3E-406B-98A0-35160395E914}|ListOut.csproj|solutionrelative:listdatadal\\myconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2DDE0EF9-EF3E-406B-98A0-35160395E914}|ListOut.csproj|c:\\users\\ims-qa\\desktop\\f-b todo\\listout\\listout\\listdatadal\\datalistdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DDE0EF9-EF3E-406B-98A0-35160395E914}|ListOut.csproj|solutionrelative:listdatadal\\datalistdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DDE0EF9-EF3E-406B-98A0-35160395E914}|ListOut.csproj|c:\\users\\ims-qa\\desktop\\f-b todo\\listout\\listout\\models\\todoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DDE0EF9-EF3E-406B-98A0-35160395E914}|ListOut.csproj|solutionrelative:models\\todoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2DDE0EF9-EF3E-406B-98A0-35160395E914}|ListOut.csproj|c:\\users\\ims-qa\\desktop\\f-b todo\\listout\\listout\\data\\dappercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2DDE0EF9-EF3E-406B-98A0-35160395E914}|ListOut.csproj|solutionrelative:data\\dappercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DDE0EF9-EF3E-406B-98A0-35160395E914}|ListOut.csproj|c:\\users\\ims-qa\\desktop\\f-b todo\\listout\\listout\\listdatadal\\datalistdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2DDE0EF9-EF3E-406B-98A0-35160395E914}|ListOut.csproj|solutionrelative:listdatadal\\datalistdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2DDE0EF9-EF3E-406B-98A0-35160395E914}|ListOut.csproj|c:\\users\\ims-qa\\desktop\\f-b todo\\listout\\listout\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2DDE0EF9-EF3E-406B-98A0-35160395E914}|ListOut.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DDE0EF9-EF3E-406B-98A0-35160395E914}|ListOut.csproj|c:\\users\\ims-qa\\desktop\\f-b todo\\listout\\listout\\listdatadal\\myconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DDE0EF9-EF3E-406B-98A0-35160395E914}|ListOut.csproj|solutionrelative:listdatadal\\myconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,52 +38,78 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\IMS-QA\\Desktop\\F-B TODO\\ListOut\\ListOut\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\IMS-QA\\Desktop\\F-B TODO\\ListOut\\ListOut\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-18T06:17:32.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ListController.cs",
+              "DocumentMoniker": "C:\\Users\\IMS-QA\\Desktop\\F-B TODO\\ListOut\\ListOut\\Controllers\\ListController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ListController.cs",
+              "ToolTip": "C:\\Users\\IMS-QA\\Desktop\\F-B TODO\\ListOut\\ListOut\\Controllers\\ListController.cs",
+              "RelativeToolTip": "Controllers\\ListController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T16:27:38.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TodoItem.cs",
+              "DocumentMoniker": "C:\\Users\\IMS-QA\\Desktop\\F-B TODO\\ListOut\\ListOut\\Models\\TodoItem.cs",
+              "RelativeDocumentMoniker": "Models\\TodoItem.cs",
+              "ToolTip": "C:\\Users\\IMS-QA\\Desktop\\F-B TODO\\ListOut\\ListOut\\Models\\TodoItem.cs",
+              "RelativeToolTip": "Models\\TodoItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T06:00:46.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "DataListDal.cs",
               "DocumentMoniker": "C:\\Users\\IMS-QA\\Desktop\\F-B TODO\\ListOut\\ListOut\\ListDataDal\\DataListDal.cs",
               "RelativeDocumentMoniker": "ListDataDal\\DataListDal.cs",
               "ToolTip": "C:\\Users\\IMS-QA\\Desktop\\F-B TODO\\ListOut\\ListOut\\ListDataDal\\DataListDal.cs",
               "RelativeToolTip": "ListDataDal\\DataListDal.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA1wDkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-15T11:15:32.894Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TodoItemsController.cs",
-              "DocumentMoniker": "C:\\Users\\IMS-QA\\Desktop\\F-B TODO\\ListOut\\ListOut\\Controllers\\TodoItemsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TodoItemsController.cs",
-              "ToolTip": "C:\\Users\\IMS-QA\\Desktop\\F-B TODO\\ListOut\\ListOut\\Controllers\\TodoItemsController.cs",
-              "RelativeToolTip": "Controllers\\TodoItemsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T11:13:49.401Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "MyConnection.cs",
               "DocumentMoniker": "C:\\Users\\IMS-QA\\Desktop\\F-B TODO\\ListOut\\ListOut\\ListDataDal\\MyConnection.cs",
               "RelativeDocumentMoniker": "ListDataDal\\MyConnection.cs",
               "ToolTip": "C:\\Users\\IMS-QA\\Desktop\\F-B TODO\\ListOut\\ListOut\\ListDataDal\\MyConnection.cs",
               "RelativeToolTip": "ListDataDal\\MyConnection.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-15T11:09:39.375Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "DapperContext.cs",
               "DocumentMoniker": "C:\\Users\\IMS-QA\\Desktop\\F-B TODO\\ListOut\\ListOut\\Data\\DapperContext.cs",
               "RelativeDocumentMoniker": "Data\\DapperContext.cs",
               "ToolTip": "C:\\Users\\IMS-QA\\Desktop\\F-B TODO\\ListOut\\ListOut\\Data\\DapperContext.cs",
               "RelativeToolTip": "Data\\DapperContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-15T11:09:33.536Z",
               "EditorCaption": ""

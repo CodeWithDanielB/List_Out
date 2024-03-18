@@ -6,7 +6,7 @@ namespace ListOut.ListDataDal
     {
         public static SqlConnection GetConnection()
         {
-            string conn = "Server=.;database=TODOLIST;Intgrated Security=True;";
+            string conn = "Server=.;database=ListOut;Intgrated Security=True;";
             SqlConnection myConn = new SqlConnection(conn);
             return myConn;
         }

@@ -68,3 +68,14 @@ C:\Users\IMS-QA\Desktop\ListOut\ListOut\obj\Debug\net8.0\refint\ListOut.dll
 C:\Users\IMS-QA\Desktop\ListOut\ListOut\obj\Debug\net8.0\ListOut.pdb
 C:\Users\IMS-QA\Desktop\ListOut\ListOut\obj\Debug\net8.0\ListOut.genruntimeconfig.cache
 C:\Users\IMS-QA\Desktop\ListOut\ListOut\obj\Debug\net8.0\ref\ListOut.dll
+C:\Users\IMS-QA\Desktop\F-B TODO\ListOut\ListOut\obj\Debug\net8.0\ListOut.csproj.AssemblyReference.cache
+C:\Users\IMS-QA\Desktop\F-B TODO\ListOut\ListOut\obj\Debug\net8.0\ListOut.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IMS-QA\Desktop\F-B TODO\ListOut\ListOut\obj\Debug\net8.0\ListOut.AssemblyInfoInputs.cache
+C:\Users\IMS-QA\Desktop\F-B TODO\ListOut\ListOut\obj\Debug\net8.0\ListOut.AssemblyInfo.cs
+C:\Users\IMS-QA\Desktop\F-B TODO\ListOut\ListOut\obj\Debug\net8.0\ListOut.csproj.CoreCompileInputs.cache
+C:\Users\IMS-QA\Desktop\F-B TODO\ListOut\ListOut\obj\Debug\net8.0\ListOut.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\IMS-QA\Desktop\F-B TODO\ListOut\ListOut\obj\Debug\net8.0\ListOut.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\IMS-QA\Desktop\F-B TODO\ListOut\ListOut\obj\Debug\net8.0\ListOut.sourcelink.json
+C:\Users\IMS-QA\Desktop\F-B TODO\ListOut\ListOut\obj\Debug\net8.0\ListOut.dll
+C:\Users\IMS-QA\Desktop\F-B TODO\ListOut\ListOut\obj\Debug\net8.0\refint\ListOut.dll
+C:\Users\IMS-QA\Desktop\F-B TODO\ListOut\ListOut\obj\Debug\net8.0\ListOut.pdb

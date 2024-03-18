@@ -12,6 +12,16 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddTransient<DapperContext>();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin",
+        builder => builder.WithOrigins("http://127.0.0.1:8000") // Replace with your actual origin
+                   .AllowAnyMethod()
+                   .AllowAnyHeader());
+
+
+});
+
 
 var app = builder.Build();
 

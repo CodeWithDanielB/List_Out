@@ -73,14 +73,19 @@ const API_EDIT = SERVER_ROOT + '/api/edit';
 const API_DELETE = SERVER_ROOT + '/api/delete';
 
 
+function reset()
+{
+    document.getElementById("new-task-input").value = '';
+}
+
 function addTask() {
-    const content = document.getElementById("new-task-input").value;
+    const taskname = document.getElementById("new-task-input").value;
 
     let json_to_submit = {
         method: "POST",
         body: JSON.stringify(
             {
-                content: content
+                Task_Name: taskname
             }
         ),
         headers: { "Content-Type": "application/json; charset=UTF-8; Access-Control-Allow-Origin: *" }
@@ -121,6 +126,7 @@ function addTask_action(id, task) {
             </div>
         </div>
     `
+    reset();
 }
 
 

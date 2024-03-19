@@ -64,6 +64,50 @@ namespace ListOut.ListDataDal
                 }
             }
         }
-     
+
+        public string DelDal(TodoItem content)
+        {
+            if (content == null)
+            {
+                var result = new
+                {
+                    status = "No Task to delete"
+                };
+
+                return JsonConvert.SerializeObject(result);
+            }
+            else
+            {
+                using (var connection = _context.CreateConnection())
+                {
+                    var query = @"DELETE FROM TaskMain WHERE ID = @Id";
+                    var parameters = new DynamicParameters();
+                    parameters.Add("@Id", Id);
+
+                    var deletedresult = await connection.ExecuteAsync(query, parameters);
+
+                    if (deletedresult > 0)
+                    {
+                        var result = new
+                        {
+                            status = "Deleted"
+                        };
+
+                    return JsonConvert.SerializeObject(result);
+                    }
+                    else
+                    {
+                        var result = new
+                        {
+                            status = "Failed"
+                        };
+
+                        return JsonConvert.SerializeObject(result);
+                    }
+                }
+            }
+
+        }
+
     }
 }

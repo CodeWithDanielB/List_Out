@@ -1,4 +1,5 @@
-﻿using ListOut.ListDataDal;
+﻿using Dapper;
+using ListOut.ListDataDal;
 using ListOut.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
@@ -20,6 +21,7 @@ namespace ListOut.Controllers
             _dal = dal;
         }
 
+        //for add api/List/add
         [HttpPost("add")]
 
         public ActionResult<string> PostValues([FromBody] TodoItem content)
@@ -27,6 +29,13 @@ namespace ListOut.Controllers
             var dataresult = _dal.DataDal(content);
 
             return Ok(dataresult);
+        }
+
+        //for delete api/List/delete
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteTask(int id)
+        {
+           
         }
 
 

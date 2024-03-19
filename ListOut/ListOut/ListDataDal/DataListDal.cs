@@ -65,49 +65,40 @@ namespace ListOut.ListDataDal
             }
         }
 
-        public string DelDal(TodoItem content)
+        public string DeleteDataDal(int id)
         {
-            if (content == null)
+            using (var connection = _context.CreateConnection())
             {
-                var result = new
+                connection.Open();
+                var query = @"DELETE FROM TaskMain WHERE ID = @id OUTPUT DELETED.ID, DELETED.Task_Name";
+                var parameters = new DynamicParameters();
+                parameters.Add("@id", id);
+
+                var deletedRecord = connection.Query<TodoItem>(query, parameters).SingleOrDefault();
+
+                if (deletedRecord != null)
                 {
-                    status = "No Task to delete"
-                };
-
-                return JsonConvert.SerializeObject(result);
-            }
-            else
-            {
-                using (var connection = _context.CreateConnection())
-                {
-                    var query = @"DELETE FROM TaskMain WHERE ID = @Id";
-                    var parameters = new DynamicParameters();
-                    parameters.Add("@Id", Id);
-
-                    var deletedresult = await connection.ExecuteAsync(query, parameters);
-
-                    if (deletedresult > 0)
+                    var result = new
                     {
-                        var result = new
-                        {
-                            status = "Deleted"
-                        };
+                        status = "Ok",
+                        id = deletedRecord.Id,
+                        content = deletedRecord.Task_Name
+                    };
 
                     return JsonConvert.SerializeObject(result);
-                    }
-                    else
+                }
+                else
+                {
+                    var result = new
                     {
-                        var result = new
-                        {
-                            status = "Failed"
-                        };
+                        status = "Failed"
+                    };
 
-                        return JsonConvert.SerializeObject(result);
-                    }
+                    return JsonConvert.SerializeObject(result);
                 }
             }
-
         }
+
 
     }
 }

@@ -41,6 +41,14 @@ namespace ListOut.Controllers
            
         }
 
+        [HttpPost("edit")]
+
+        public ActionResult<string> EditTask([FromBody] TodoItem content)
+        {
+            var editresult = _dal.EditDal(content);
+
+            return Ok(editresult);
+        }
 
     }
 }

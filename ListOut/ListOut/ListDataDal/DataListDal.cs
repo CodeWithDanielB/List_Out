@@ -111,8 +111,55 @@ namespace ListOut.ListDataDal
                     }
                 }
             }
-
-
         }
+
+        public string EditDal(TodoItem content)
+        {
+            if (content == null)
+            {
+                var result = new
+                {
+                    status = "Failed"
+                };
+
+                return JsonConvert.SerializeObject(result);
+            }
+            else
+            {
+                using (var connection = _context.CreateConnection())
+                {
+                    connection.Open();
+                    var query = @"UPDATE TaskMain SET Task_Name = @taskName WHERE ID = @id";
+                    var parameters = new DynamicParameters();
+                    parameters.Add("@id", content.Id);
+                    parameters.Add("@taskName", content.Task_Name);
+
+                    var updatedRecord = connection.Execute(query, parameters);
+
+                    if (updatedRecord > 0)
+                    {
+                        var result = new
+                        {
+                            status = "Ok",
+                            id = content.Id,
+                            content = content.Task_Name
+
+                        };
+
+                        return JsonConvert.SerializeObject(result);
+                    }
+                    else
+                    {
+                        var result = new
+                        {
+                            status = "Failed"
+                        };
+
+                        return JsonConvert.SerializeObject(result);
+                    }
+                }
+            }
+        }
+
     }
 }

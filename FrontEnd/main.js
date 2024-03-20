@@ -69,7 +69,7 @@
 
 const SERVER_ROOT = 'http://127.0.0.1:5091';
 const API_ADD = SERVER_ROOT + '/api/List/add';
-const API_EDIT = SERVER_ROOT + '/api/edit';
+const API_EDIT = SERVER_ROOT + '/api/List/edit';
 const API_DELETE = SERVER_ROOT + '/api/List/delete';
 
 
@@ -154,7 +154,7 @@ function editTask(id) {
             if (json.status == "fail") {
                 alert("This task can not be modified");
                 return;
-            } else if (json.status == "ok") {
+            } else if (json.status == "Ok") {
                 document.getElementById(`content_${id}`).value = json.content;
             } else {
                 alert("Something went wrong while saving the changes.");

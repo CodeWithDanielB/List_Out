@@ -42,6 +42,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ListOut.Controllers.ListController",
+    "Method": "EditTask",
+    "RelativePath": "api/List/edit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "content",
+        "Type": "ListOut.Models.TodoItem",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "ListOut.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

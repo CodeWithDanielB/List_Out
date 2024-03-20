@@ -148,3 +148,5 @@ C:\Users\IMS-QA\Desktop\F-B TODO\ListOut\ListOut\obj\Debug\net8.0\scopedcss\bund
 C:\Users\IMS-QA\Desktop\F-B TODO\ListOut\ListOut\obj\Debug\net8.0\ListOut.csproj.Up2Date
 C:\Users\IMS-QA\Desktop\F-B TODO\ListOut\ListOut\obj\Debug\net8.0\ListOut.genruntimeconfig.cache
 C:\Users\IMS-QA\Desktop\F-B TODO\ListOut\ListOut\obj\Debug\net8.0\ref\ListOut.dll
+C:\Users\IMS-QA\Desktop\F-B TODO\ListOut\ListOut\bin\Debug\net8.0\Elasticsearch.Net.dll
+C:\Users\IMS-QA\Desktop\F-B TODO\ListOut\ListOut\bin\Debug\net8.0\Nest.dll

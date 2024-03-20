@@ -18,7 +18,7 @@ namespace ListOut.ListDataDal
 
         public string DataDal(TodoItem content)
         {
-            if (content == null) 
+            if (content == null)
             {
                 var result = new
                 {
@@ -65,40 +65,54 @@ namespace ListOut.ListDataDal
             }
         }
 
-        public string DeleteDataDal(int id)
+        public string DeleteDataDal(TodoItem content)
         {
-            using (var connection = _context.CreateConnection())
+            if (content == null)
             {
-                connection.Open();
-                var query = @"DELETE FROM TaskMain WHERE ID = @id OUTPUT DELETED.ID, DELETED.Task_Name";
-                var parameters = new DynamicParameters();
-                parameters.Add("@id", id);
-
-                var deletedRecord = connection.Query<TodoItem>(query, parameters).SingleOrDefault();
-
-                if (deletedRecord != null)
+                var result = new
                 {
-                    var result = new
-                    {
-                        status = "Ok",
-                        id = deletedRecord.Id,
-                        content = deletedRecord.Task_Name
-                    };
+                    status = "Failed"
+                };
 
-                    return JsonConvert.SerializeObject(result);
-                }
-                else
+                return JsonConvert.SerializeObject(result);
+            }
+            else
+            {
+                //var id = content.Id;
+
+                using (var connection = _context.CreateConnection())
                 {
-                    var result = new
-                    {
-                        status = "Failed"
-                    };
+                    connection.Open();
+                    var query = @"DELETE FROM TaskMain WHERE ID = @id";
+                    var parameters = new DynamicParameters();
+                    parameters.Add("@id", content.Id);
 
-                    return JsonConvert.SerializeObject(result);
+                    var deletedRecord = connection.Execute(query, parameters);
+
+                    if (deletedRecord != null)
+                    {
+                        var result = new
+                        {
+                            status = "Ok",
+                            id = content.Id
+
+                        };
+
+                        return JsonConvert.SerializeObject(result);
+                    }
+                    else
+                    {
+                        var result = new
+                        {
+                            status = "Failed"
+                        };
+
+                        return JsonConvert.SerializeObject(result);
+                    }
                 }
             }
+
+
         }
-
-
     }
 }

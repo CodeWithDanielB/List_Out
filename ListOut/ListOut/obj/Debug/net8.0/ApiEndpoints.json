@@ -26,6 +26,22 @@
     ]
   },
   {
+    "ContainingType": "ListOut.Controllers.ListController",
+    "Method": "DeleteTask",
+    "RelativePath": "api/List/delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "ListOut.Models.TodoItem",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ListOut.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

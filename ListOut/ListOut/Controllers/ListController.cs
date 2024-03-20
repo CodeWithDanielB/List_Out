@@ -31,10 +31,13 @@ namespace ListOut.Controllers
             return Ok(dataresult);
         }
 
-        //for delete api/List/delete
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteTask(int id)
+        //for delete api/List/delete/id
+        [HttpPost("delete")]
+        public IActionResult DeleteTask([FromBody] TodoItem Id)
         {
+            var deleteresult = _dal.DeleteDataDal(Id);
+
+            return Ok(deleteresult);
            
         }
 

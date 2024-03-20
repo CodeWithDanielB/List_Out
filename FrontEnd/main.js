@@ -70,7 +70,7 @@
 const SERVER_ROOT = 'http://127.0.0.1:5091';
 const API_ADD = SERVER_ROOT + '/api/List/add';
 const API_EDIT = SERVER_ROOT + '/api/edit';
-const API_DELETE = SERVER_ROOT + '/api/delete';
+const API_DELETE = SERVER_ROOT + '/api/List/delete';
 
 
 function reset()
@@ -141,8 +141,8 @@ function editTask(id) {
             method: "POST",
             body: JSON.stringify(
                 {
-                    id: id,
-                    content: content
+                    Id: id,
+                    Task_Name: content
                 }
             ),
             headers: { "Content-Type": "application/json; charset=UTF-8; Access-Control-Allow-Origin: *" }
@@ -184,7 +184,8 @@ function deleteTask(id) {
         method: "POST",
         body: JSON.stringify(
             {
-                id: id
+                id: id,
+                Task_Name: ""
             }
         ),
         headers: { "Content-Type": "application/json; charset=UTF-8; Access-Control-Allow-Origin: *" }
@@ -196,7 +197,7 @@ function deleteTask(id) {
         if (json.status == "fail") {
             alert("This task can not be deleted");
             return;
-        } else if (json.status == "ok") {
+        } else if (json.status == "Ok") {
             document.getElementById(`id_${id}`).parentElement.parentElement.remove();
         } else {
             alert("Something went wrong while deleting the task.");
